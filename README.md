@@ -115,7 +115,7 @@ sudo apt-get install git redis-server libboost1.55-all-dev nodejs-dev nodejs-leg
 Clone the repository and run `npm update` for all the dependencies to be installed:
 
 ```bash
-git clone https://github.com/clintar/cryptonote-xmr-pool.git pool
+git clone https://github.com/techqc/cryptonote-xmr-pool.git pool
 cd pool
 npm update
 ```
@@ -257,9 +257,7 @@ Explanation for each field:
     /* Block depth required for a block to unlocked/mature. Found in daemon source as
        the variable CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW */
     "depth": 60,
-    "poolFee": 1.8, //1.8% pool fee (2% total fee total including donations)
-    "devDonation": 0.1, //0.1% donation to send to pool dev - only works with Monero
-    "coreDevDonation": 0.1 //0.1% donation to send to core devs - works with Bytecoin, Monero, Dashcoin, QuarazCoin, Fantoncoin, AEON and OneEvilCoin
+    "poolFee": 1.8, //1.8% pool fee (2% total fee total including donations)    
 },
 
 /* AJAX API used for front-end website. */
